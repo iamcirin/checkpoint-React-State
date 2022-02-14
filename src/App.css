@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img-back {
+  background-image: url("./images/picwoman.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-back::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.438);
+  z-index: -3;
+}
+
+.img-container {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 50%;
+  top: -80px;
+  left: 20px;
+  z-index: 5;
+}
+
+.img-container img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px 15px 200px;
+  margin-left: 0;
+  width: 95%;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 28px;
+  background-color: rgba(245, 245, 220, 0.411);
+  border: 1.5px solid;
+  border-radius: 5px;
+  background-image: url("./images/search.png");
+  background-position: 10px 0.5px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  color: black;
+}
+::placeholder {
+  color: rgb(70, 69, 69);
+}
+
+.menu{
+  cursor: pointer;
+}
+
+h1{
+  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 2.5px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  margin-bottom:70px;
+  margin-left: 5%;
+  height: 100px;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+h3{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(228, 183, 129);
+  letter-spacing: 1.5px;
+}
+
+.bio{
+  max-width: 60%;
+  margin: -90px auto;
+  padding: 20px;
+  background-color: rgb(1, 1, 14);
+  border-radius: 20px;
+  color: aliceblue;
+  font-size: 22px;
+}
+
+body{
+  background-color: rgb(241, 231, 218);
+}
+
+.tame{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button{
+ margin-right: 20%;
+ padding: 3px 20px;
+ font-size: 18px;
+ background-color: transparent;
+ border: 1px solid rgb(241, 241, 149);
+ border-radius: 10px;
+ color: rgb(1, 1, 14);
+ box-shadow: 0.9px 0.8px 4px rgba(255, 255, 255, 0.274);
+}
+
+button:hover{
+  background-color: rgb(224, 205, 118);
+  color: rgb(0, 0, 0);
+  border: none;
+  box-shadow: 0 0 0;
+}
